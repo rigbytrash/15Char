@@ -12,14 +12,10 @@ $(document).ready(function() {
 	});
 
 	$("button.like").on("click", function() {
-        console.log("LIKE CLICK JS");
-
         var clicked_obj = $(this);
 
-        // Which idea was clicked? Which button?
+        // Which post was liked/unliked?
         var post_id = $(this).attr('id');
-        var vote_type = $(this).children()[0].id;
-
         $.ajax({
             url: '/like',
             type: 'POST',
