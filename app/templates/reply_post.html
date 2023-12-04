@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include "back_button.html" %}
+
+<div class="container">
+
+    {% set hide_buttons = true %}
+    {% include 'post_card.html' %}
+
+    
+    <div class="card mb-3">
+        <div class="card-body">
+            <meta name="csrf-token" content="{{ csrf_token() }}">
+            <form action="" method="post" role="form" name="post">
+                {{ form.hidden_tag() }}
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                {{ form.csrf }}
+                <div class="form-group">
+                    <label for="post">Reply</label>
+                    <input type="text" class="form-control" id="post" name="post" placeholder="Enter 15 characters here">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success submit-button" style="background-color: #FFC0CB;">Submit your reply</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+

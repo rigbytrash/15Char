@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% include "back_button.html" %}
+
+<div class="container">
+    <div class="card mb-3">
+        <div class="card-body">
+            <meta name="csrf-token" content="{{ csrf_token() }}">
+            <form action="" method="post" role="form" name="emoji_form">
+                {{ form.hidden_tag() }}
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                {{ form.csrf }}
+                <div class="form-group">
+                    <label for="emoji">Select Emoji</label>
+                    {{ form.emoji(class="form-control") }}
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success submit-button" style="background-color: #FFC0CB;">Change</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

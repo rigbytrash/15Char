@@ -1,0 +1,298 @@
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 01:08:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 01:08:17] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 01:08:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 01:08:17] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 01:08:17] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 01:08:18] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/app/views.py', reloading
+INFO:werkzeug: * Running on http://127.0.0.1:5432/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:42:46] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:42:46] "GET /login?next=%2F HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:42:46] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+INFO:root:User david logged in
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:43:02] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:43:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:43:03] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:43:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:43:03] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:43:03] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:56:02] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+INFO:root:User testuser logged in
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:56:02] "GET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:56:02] "GET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:56:02] "GET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:56:02] "GET /logout?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:56:02] "GET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged out in
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User david logged out
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:56:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 12:56:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User david logged in
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:27] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:27] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:27] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:34] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:34] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:34] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:00:35] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged out
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged out
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:33] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:33] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:33] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:33] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:34] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:34] "GET /reply_post/1?next=http%3A%2F%2F127.0.0.1%3A5000%2F HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:35] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:35] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:35] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:37] "POST /reply_post/1?next=http%3A%2F%2F127.0.0.1%3A5000%2F HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:37] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:37] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:04:37] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged out
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged out
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged out
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:08:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:08:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:08:52] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:08:52] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:08:53] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:08:53] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:08:55] "POST /like HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:08:56] "[36mGET /static/svg/hand-thumbs-up-fill.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged out
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged out
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:22] "[31m[1mGET /generate_test_data HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:29] "[32mGET /generate_test_data HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:30] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:30] "[36mGET /static/svg/hand-thumbs-up-fill.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:30] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:30] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:30] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:41] "GET /view_post/8?next=http%3A%2F%2F127.0.0.1%3A5000%2F HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:41] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:41] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:41] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:22:41] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:23:30] "[32mGET /generate_test_data HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:23:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:23:31] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:23:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:23:31] "[36mGET /static/svg/hand-thumbs-up-fill.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:23:31] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:23:31] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:23:31] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:15] "[32mGET /generate_test_data HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:16] "[36mGET /static/svg/hand-thumbs-up-fill.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:16] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:16] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:16] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:16] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:23] "[32mGET /wipe HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:23] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:23] "GET /login?next=%2F HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:26] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:31] "[32mPOST /register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:31] "GET /login HTTP/1.1" 200 -
+INFO:root:User david logged in
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:36] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:36] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:36] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 13:26:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -

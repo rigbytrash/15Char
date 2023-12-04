@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% include "back_button.html" %}
+
+<div class="container">
+    <h1><a href="{{ url_for('user_posts', user_id=post.owner_id) }}" class="link">{{ post.owner_emoji }} {{ post.owner_username }}</a>'s Point</h1>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    {% set hide_username = true %}
+    {% set post_page = true %}
+    {% set hide_buttons = true %}
+    {% include 'post_card.html' %}
+
+      {% if likes %}
+        <h1>Liked by:</h1><i>
+
+        {% for like in likes %}
+            <li style="font-size: x-large; font-style: normal;"><a href="{{ url_for('user_posts', user_id=like.user_id) }}" class="link">{{ like.owner_emoji }} {{ like.owner_username }}</a></li>
+        {% endfor %}
+    {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% include "back_button.html" %}
+
+<div class="container">
+    <h2><a href="{{ url_for('user_posts', user_id=post.owner_id, next=request.url) }}" class="link">{{ post.owner_emoji }} {{ post.owner_username }}</a>'s Point</h2>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    {% set hide_username = true %}
+    {% set post_page = true %}
+    {% include 'post_card.html' %}
+
+      {% if replies %}
+        <h2>Replies:</h2><i>
+
+        {% for reply in replies|sort(attribute='timestamp', reverse=true) %}
+            {% include 'reply_card.html' %}
+        {% endfor %}
+    {% endif %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,54 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: auto;
+}
+
+.submit-button {
+    background-color: #FFC0CB;
+    color: black;
+    border-color: palevioletred;
+}
+
+.submit-button:hover {
+    border-color: black;
+    color: black;
+}
+
+.like {
+    background-color: rgb(235, 199, 235);
+    color: black;
+    border-color: palevioletred;
+}
+
+.like:hover {
+    background-color: plum;
+    color: black;
+    border-color: rgb(0, 0, 0);
+}
+
+.like_count{
+    color: black;
+}
+
+.link{
+    color: rgb(158, 68, 158);
+}
+
+.emoji{
+    background-color: #FFC0CB;
+    color: black;
+    border-color: palevioletred;
+}
+
+.reply{
+    background-color: #c0f8ff;
+    color: black;
+    border-color: rgb(112, 216, 181);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(158, 68, 158);
+}

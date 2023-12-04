@@ -1,0 +1,23 @@
+
+<style>
+    .btn {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+</style>
+
+<button class="btn btn-primary like" id="{{ post.id }}" data-unliked-src="{{ url_for('static', filename='svg/hand-thumbs-up.svg') }}" data-liked-src="{{ url_for('static', filename='svg/hand-thumbs-up-fill.svg') }}">
+    <img src="{{ url_for('static', filename='svg/hand-thumbs-up-fill.svg') if post.user_has_liked else url_for('static', filename='svg/hand-thumbs-up.svg') }}" alt="Like Icon" id="up" style="width: 17px; height: 17px;"> Like
+    <span class="badge like_count" id="txt">({{ post.likes }})</span>
+</button>
+
+<button class="btn btn-info reply" data-post-id="{{ post.id }}" onclick="window.location.href='{{ url_for('reply_post', post_id=post.id, next=request.url) }}'">Reply</button>
+
+{% if not post_page %}
+    <button class="btn btn-secondary view-replies" data-post-id="{{ post.id }}" onclick="window.location.href='{{ url_for('view_post', post_id=post.id,  next=request.url) }}'">View Replies ({{ post.reply_count }})</button>
+{% endif %}
+
+
+{% if current_user.id == post.owner_id %}
+    <button class="btn btn-danger delete-post" data-post-id="{{ post.id }}" onclick="window.location.href='{{ url_for('delete_post', post_id=post.id, next=request.url) }}'">Delete Post</button>
+{% endif %}

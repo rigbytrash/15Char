@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='my_css.css')}}">
+<div class="card mb-3">
+    <div class="card-body">
+        {% if not hide_username %}
+            <h1 class="mt-0" style="font-size: large;"><a href="{{ url_for('user_posts', user_id=post.owner_id, next=request.url) }}" class="link">{{ post.owner_username }}</a>'s point:</h1>
+        {% endif %}
+        <h2 class="card-text">{{ post.text }}</h1>
+        <p class="card-text">
+            <small class="text-muted">{{ post.timestamp.strftime("%d/%m/%Y %H:%M") if post.timestamp }}</small>
+            {% if not hide_buttons %}
+            <small class="text-muted"><a href="{{ url_for('view_likes', post_id=post.id, next=request.url) }}";">View Likes</a></small>
+            {% endif %}
+        </p>
+        {% if not hide_buttons %}
+            {% include 'post_buttons.html' %}
+        {% endif %}
+    </div>
+</div>

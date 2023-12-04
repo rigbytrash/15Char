@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h1 class="card-title">Hello there, {{ current_user.username }}</h1>
+            <meta name="csrf-token" content="{{ csrf_token() }}">
+            <p class="card-text lead">You have 15 characters to make your point.</p>
+
+            <form action="" method="post" role="form" name="post">
+                {{ form.hidden_tag() }}
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                {{ form.csrf }}
+                <div class="form-group">
+                    <label for="post">Point</label>
+                    <input type="text" class="form-control" id="post" name="post" placeholder="Enter 15 characters here">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-success submit-button" style="background-color: #FFC0CB;">Submit your point</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Latest Points</h1>
+
+    {% for post in posts|sort(attribute='timestamp', reverse=true) %}
+        {% include 'post_card.html' %}
+    {% endfor %}
+
+</div>
+
+{% endblock %}

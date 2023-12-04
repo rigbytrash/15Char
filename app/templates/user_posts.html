@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% include "back_button.html" %}
+
+<h1>
+    Points made by {{ user.emoji }} {{ user.username }}
+</h1>
+
+    {% if user.id == current_user.id %}
+        <small class="text-muted"><a href="{{ url_for('change_emoji', next=request.url) }}";">Change Your Emoji?</a></small>
+    {% endif %}
+
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
+{% if user_posts %}
+
+    {% for post in user_posts|sort(attribute='timestamp', reverse=true) %}
+        {% set hide_username = true %}
+        {% include 'post_card.html' %}
+    {% endfor %}
+
+{% else %}
+    <p>No points made by this user yet.</p>
+{% endif %}
+
+
+{% endblock %}
