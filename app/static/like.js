@@ -16,10 +16,11 @@ $(document).ready(function() {
 
         // Which post was liked/unliked?
         var post_id = $(this).attr('id');
+
         $.ajax({
             url: '/like',
             type: 'POST',
-            data: JSON.stringify({ post_id: post_id, vote_type: vote_type }),
+            data: JSON.stringify({ post_id: post_id }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function(response) {

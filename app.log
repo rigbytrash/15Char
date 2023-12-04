@@ -337,3 +337,46 @@ INFO:root:User testuser logged in
 INFO:root:User testuser logged out
 INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/app/views.py', reloading
 INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:47] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:47] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:root:User david logged in
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:52] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:52] "GET /static/like.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:52] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:55] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:55] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:55] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:55] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:31:55] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:11] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:11] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:11] "GET /static/like.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:11] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:13] "POST /like HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:13] "[36mGET /static/svg/hand-thumbs-up-fill.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:27] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:27] "[36mGET /static/svg/hand-thumbs-up-fill.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:27] "GET /static/like.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:27] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:27] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:29] "POST /like HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:29] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:30] "POST /like HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:31] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:31] "[36mGET /static/svg/hand-thumbs-up-fill.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:31] "[36mGET /static/like.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:31] "[36mGET /static/back_pattern.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:32] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:32] "POST /like HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:32] "[36mGET /static/svg/hand-thumbs-up.svg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 20:32:33] "POST /like HTTP/1.1" 200 -
