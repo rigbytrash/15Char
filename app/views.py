@@ -45,6 +45,8 @@ def process_posts(posts):
             id=post.owner_id).first().username
         post.reply_count = models.Reply.query.filter_by(
             parent_id=post.id).count()
+        post.user_has_followed = models.Follow.query.filter_by(
+            follower_id=current_user.id, followed_id=post.owner_id).first() is not None
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -399,3 +401,43 @@ def view_likes(post_id):
 
     return render_template('view_likes.html', 
                             title='View Likes', post=post, likes=likes)
+
+#follow route that uses ajax to follow a user
+@app.route('/follow', methods=['POST'])
+def follow():
+    data = json.loads(request.data)
+    post = models.Post.query.get(data.get('post_id'))
+    user_id = post.owner_id
+    user = models.User.query.get(user_id)
+    followed = True
+    txt = "Follow"
+    existing_follow = models.Follow.query.filter_by(
+        follower_id=current_user.id, followed_id=user.id).first()
+
+    if existing_follow:
+        followed = False
+        db.session.delete(existing_follow)
+    else:
+        new_follow = models.Follow(follower_id=current_user.id, followed_id=user.id)
+        db.session.add(new_follow)
+        txt = "Unfollow"
+
+    db.session.commit()
+    return json.dumps(
+        {'status': 'OK', 'btntxt': txt, 'user_has_followed': followed})
+
+
+@app.route('/following', methods=['GET'])
+@login_required
+def following():
+    # Retrieve the users the current user is following
+    following_users = [follow.followed_id for follow in models.Follow.query.filter_by(follower_id=current_user.id).all()]
+
+    # Retrieve posts from the users the current user is following
+    following_posts = models.Post.query.filter(models.Post.owner_id.in_(following_users)).all()
+
+    # Process posts as needed
+    process_posts(following_posts)
+
+    return render_template('following.html', title='Following', posts=following_posts)
+

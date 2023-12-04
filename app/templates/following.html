@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% include "back_button.html" %}
+
+<h1>
+    Points made by the people you follow
+</h1>
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
+
+{% if posts %}
+
+    {% for post in posts|sort(attribute='timestamp', reverse=true) %}
+        {% include 'post_card.html' %}
+    {% endfor %}
+
+{% else %}
+    <p>No points made.</p>
+{% endif %}
+
+
+{% endblock %}
