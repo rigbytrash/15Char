@@ -558,6 +558,74 @@ class TestLogout(TestCase):
             self.assertEqual(response.status_code, 200)
             self.assertIn(b'Login Page', response.data)
 
+class TestFollowUser(TestCase):
+
+    def create_app(self):
+        app.config['TESTING'] = True
+        app.config['WTF_CSRF_ENABLED'] = False
+        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
+        return app
+
+    def setUp(self):
+        db.create_all()
+        self.client = app.test_client()
+
+        # Create a test user for following
+        hashed_password = bcrypt.generate_password_hash("testpassword")
+        test_user = User(username='testuser', password=hashed_password)
+        db.session.add(test_user)
+        db.session.commit()
+
+        # Log in the test user
+        response = self.client.post('/login', data=dict(
+            username='testuser',
+            password='testpassword'
+        ), follow_redirects=True)
+
+        self.assertEqual(response.status_code, 200)
+
+        # Create another test user to be followed
+        hashed_password = bcrypt.generate_password_hash("testpassword2")
+        user_to_follow = User(username='user_to_follow', password=hashed_password)
+        db.session.add(user_to_follow)
+        db.session.commit()
+
+        # new user makes post
+        test_post = Post(text='Test post', owner_id=user_to_follow.id,
+                            timestamp=datetime.datetime.utcnow())
+        db.session.add(test_post)
+        db.session.commit()
+
+    def tearDown(self):
+        db.session.remove()
+        db.drop_all()
+
+    def test_follow_user(self):
+        """Test following a user."""
+        user_to_follow = User.query.filter_by(username='user_to_follow').first()
+        test_user = User.query.filter_by(username='testuser').first()
+        
+        # Ensure that the user is not initially followed
+        self.assertFalse(Follow.query.filter_by(
+            follower_id=test_user.id, followed_id=user_to_follow.id).first())
+
+        # find the test post
+        test_post = Post.query.filter_by(text='Test post').first()
+
+        # Follow the user
+        response = self.client.post('/follow', data=json.dumps({'post_id': test_post.id}), content_type='application/json')
+        
+        self.assertEqual(response.status_code, 200)
+        data = json.loads(response.data.decode('utf-8'))
+        self.assertEqual(data['status'], 'OK')
+        self.assertTrue(data['user_has_followed'])
+
+        # Check if the follow relationship is now in the database
+        follow_relationship = Follow.query.filter_by(
+            follower_id=test_user.id, followed_id=user_to_follow.id).first()
+        self.assertIsNotNone(follow_relationship)
+
+
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestRegistration)
@@ -574,4 +642,5 @@ if __name__ == '__main__':
     ).loadTestsFromTestCase(TestChangeEmoji))
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestSearch))
     suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestLogout))
+    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(TestFollowUser))
     unittest.TextTestRunner(resultclass=CustomTestResult).run(suite)

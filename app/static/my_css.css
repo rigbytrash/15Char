@@ -22,6 +22,18 @@
     border-color: palevioletred;
 }
 
+.follow-button-inner {
+    background-color: clear;
+    color: white;
+    border-color: rgb(78, 151, 240);;
+}
+
+.follow {
+    background-color: rgb(192, 13, 192);
+    color: white;
+    border-color: palevioletred;
+}
+
 .like:hover {
     background-color: plum;
     color: black;

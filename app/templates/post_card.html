@@ -9,7 +9,7 @@
             <small class="text-muted">{{ post.timestamp.strftime("%d/%m/%Y %H:%M") if post.timestamp }}</small>
             {% if not hide_buttons %}
             <small class="text-muted"><a href="{{ url_for('view_likes', post_id=post.id, next=request.url) }}";">View Likes</a></small>
-            {% endif %}
+            {% endif %}                        
         </p>
         {% if not hide_buttons %}
             {% include 'post_buttons.html' %}
