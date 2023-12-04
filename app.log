@@ -323,3 +323,17 @@ INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 15:10:45] "[36mGET /static/favicon.ico
 INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 15:11:27] "GET /login HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 15:11:28] "[36mGET /static/my_css.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [04/Dec/2023 15:11:28] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged in
+INFO:root:User testuser logged out
+INFO:werkzeug: * Detected change in '/uolstore/home/student_lnxhome01/sc22h2s/Documents/webDev/coursework2/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
