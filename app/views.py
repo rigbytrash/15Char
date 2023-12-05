@@ -117,6 +117,8 @@ def view_post(post_id):
     post.user_has_liked = models.Like.query.filter_by(
         user_id=current_user.id, post_id=post.id).first() is not None
     post.reply_count = models.Reply.query.filter_by(parent_id=post.id).count()
+    post.user_has_followed = models.Follow.query.filter_by(
+            follower_id=current_user.id, followed_id=post.owner_id).first() is not None
 
     if post:
         replies = models.Reply.query.filter_by(parent_id=post.id).all()
