@@ -67,7 +67,7 @@
     border-color: #98c6cc
 }
 
-.reply::-moz-range-thumb{
+.reply:hover{
     background-color: #9ecbd1;
     color: black;
     border-color: black;
@@ -76,4 +76,14 @@
 a {
     text-decoration: none;
     color: rgb(158, 68, 158);
+}
+
+.view-replies:hover{
+    border-color: black;
+
+}
+
+.delete-post:hover{
+    border-color: black;
+
 }
