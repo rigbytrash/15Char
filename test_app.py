@@ -189,7 +189,7 @@ class TestCreatePost(TestCase):
 
         # Check if the error message is present in the response
         self.assertIn(
-            b'Error: Post should be 15 characters or less.', response.data)
+            b'Error: Point should be 15 characters or less.', response.data)
 
         # Check if the post is not in the database
         post = Post.query.filter_by(

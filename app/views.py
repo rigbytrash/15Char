@@ -79,7 +79,7 @@ def index():
     posts = models.Post.query.all()
     if form.validate_on_submit():
         if len(form.post.data) > 15:
-            flash("Error: Post should be 15 characters or less.", 'danger')
+            flash("Error: Point should be 15 characters or less.", 'danger')
         else:
             save_post(form)
     posts = models.Post.query.all()
