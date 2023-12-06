@@ -8,18 +8,19 @@
 .submit-button {
     background-color: #FFC0CB;
     color: black;
-    border-color: palevioletred;
+    border-color: #d39ea7
 }
 
 .submit-button:hover {
     border-color: black;
     color: black;
+    background-color: #d39ea7
 }
 
 .like {
     background-color: rgb(235, 199, 235);
     color: black;
-    border-color: palevioletred;
+    border-color: rgb(175, 146, 175);;
 }
 
 .follow-button-inner {
@@ -31,7 +32,13 @@
 .follow {
     background-color: rgb(192, 13, 192);
     color: white;
-    border-color: palevioletred;
+    border-color: rgb(168, 86, 114);
+}
+
+.follow:hover {
+    background-color: rgb(148, 25, 148);
+    color: white;
+    border-color: rgb(0, 0, 0);
 }
 
 .like:hover {
@@ -57,7 +64,13 @@
 .reply{
     background-color: #c0f8ff;
     color: black;
-    border-color: rgb(112, 216, 181);
+    border-color: #98c6cc
+}
+
+.reply::-moz-range-thumb{
+    background-color: #9ecbd1;
+    color: black;
+    border-color: black;
 }
 
 a {
