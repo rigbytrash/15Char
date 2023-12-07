@@ -350,7 +350,7 @@ class TestDeleteReply(TestCase):
 
         # Create a test reply
         test_reply = Reply(text='Test reply', owner_id=test_user.id,
-                           parent_id=test_post.id, 
+                           parent_id=test_post.id,
                            timestamp=datetime.datetime.utcnow())
         db.session.add(test_reply)
         db.session.commit()
@@ -558,6 +558,7 @@ class TestLogout(TestCase):
             self.assertEqual(response.status_code, 200)
             self.assertIn(b'Login Page', response.data)
 
+
 class TestFollowUser(TestCase):
 
     def create_app(self):
@@ -586,13 +587,14 @@ class TestFollowUser(TestCase):
 
         # Create another test user to be followed
         hashed_password = bcrypt.generate_password_hash("testpassword2")
-        user_to_follow = User(username='user_to_follow', password=hashed_password)
+        user_to_follow = User(username='user_to_follow',
+                              password=hashed_password)
         db.session.add(user_to_follow)
         db.session.commit()
 
         # new user makes post
         test_post = Post(text='Test post', owner_id=user_to_follow.id,
-                            timestamp=datetime.datetime.utcnow())
+                         timestamp=datetime.datetime.utcnow())
         db.session.add(test_post)
         db.session.commit()
 
@@ -602,9 +604,10 @@ class TestFollowUser(TestCase):
 
     def test_follow_user(self):
         """Test following a user."""
-        user_to_follow = User.query.filter_by(username='user_to_follow').first()
+        user_to_follow = User.query.filter_by(
+            username='user_to_follow').first()
         test_user = User.query.filter_by(username='testuser').first()
-        
+
         # Ensure that the user is not initially followed
         self.assertFalse(Follow.query.filter_by(
             follower_id=test_user.id, followed_id=user_to_follow.id).first())
@@ -613,8 +616,9 @@ class TestFollowUser(TestCase):
         test_post = Post.query.filter_by(text='Test post').first()
 
         # Follow the user
-        response = self.client.post('/follow', data=json.dumps({'post_id': test_post.id}), content_type='application/json')
-        
+        response = self.client.post(
+            '/follow', data=json.dumps({'post_id': test_post.id}), content_type='application/json')
+
         self.assertEqual(response.status_code, 200)
         data = json.loads(response.data.decode('utf-8'))
         self.assertEqual(data['status'], 'OK')
@@ -624,7 +628,6 @@ class TestFollowUser(TestCase):
         follow_relationship = Follow.query.filter_by(
             follower_id=test_user.id, followed_id=user_to_follow.id).first()
         self.assertIsNotNone(follow_relationship)
-
 
 
 if __name__ == '__main__':
