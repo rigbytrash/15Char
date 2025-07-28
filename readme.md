@@ -5,6 +5,10 @@ This project is a simple social media microblog application built with Flask. It
 ## Contributing
 This project was developed for a university project. While not actively seeking contributions, feel free to fork the repository and adapt it to your needs.
 
+## Image
+<img width="750" alt="image" src="https://github.com/user-attachments/assets/1d030a3e-ab01-448f-a481-bbfa78a6b2fd" />
+
+
 ## Features
 * User authentication (registration, login, logout)
 * Create, view, and delete posts
