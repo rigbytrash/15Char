@@ -30,6 +30,7 @@ Follow these steps to set up and run the application locally:
 ```bash
 git clone <your-repository-url>
 cd <your-repository-name>
+```
 
 ### 2. Create a Virtual Environment
 It's highly recommended to use a virtual environment to manage project dependencies.
